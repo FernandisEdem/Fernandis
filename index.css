@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: #000;
+}
+
+/* Navigation Bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+        width: 120px;
+}
+
+nav ul{
+    margin: 20px 0px 0px 0px;
+    /*In this order margin-top:
+    margin-right
+    margin-bottom
+    margin-left */
+    font-weight: 100;
+    /* To bolden text
+    ranges from 100 to 900 */
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+    text-decoration-color: rgb(255, 0, 230);
+    color: rgb(0, 255, 247);
+    font-size: 17px;
+    /* text-shadow: 2px 2px #ff0000; */
+}
