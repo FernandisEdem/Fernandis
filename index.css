@@ -38,13 +38,14 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: hsl(0, 0%, 98%);
-    font-size: 14px;
+    font-size: 11px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul li a:hover{
     text-decoration:underline;
     text-decoration-color: rgb(255, 0, 230);
     color: rgb(0, 255, 247);
-    font-size: 17px;
+    font-size: 12px;
     /* text-shadow: 2px 2px #ff0000; */
 }
