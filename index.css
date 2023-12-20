@@ -7,7 +7,7 @@
 body{
     align-items: center;
     background-color: #000;
-    color: #fff;
+    color: #ababab;
     font-family:'Courier New', Courier, monospace ;
 }
 
@@ -84,6 +84,7 @@ nav ul li a:hover::after{
 .hero-section p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8px;
+    color: rgb(255, 0, 208);
 }
 
 .hero-section h1{
@@ -92,5 +93,42 @@ nav ul li a:hover::after{
 
 }
 .hero-section h1 span{
-    color:#ff004f;
+    color:#ff007b;
 }
+
+
+/* About Me */
+#about{
+    padding: 40px 0;
+    /* color: #ababab; */
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+ .content{
+    font-size: 13px;
+}
+
