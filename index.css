@@ -1,25 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     align-items: center;
     background-color: #000;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace ;
 }
 
 /* Navigation Bar */
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav img{
-        width: 120px;
+        width: 100px;
 }
 
 nav ul{
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     /*In this order margin-top:
     margin-right
     margin-bottom
@@ -30,9 +35,9 @@ nav ul{
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
     list-style-type: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul li a{
@@ -40,12 +45,52 @@ nav ul li a{
     color: hsl(0, 0%, 98%);
     font-size: 11px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
 }
 
 nav ul li a:hover{
-    text-decoration:underline;
-    text-decoration-color: rgb(255, 0, 230);
+    /* text-decoration:underline;
+    text-decoration-color: rgb(255, 0, 230); */
+    /* This has been taken care of by the following
+    position: relative (under nav ul li a)
+    transtion: 0.5s (under nav ul li a::after)
+    nav ul li a:hover::after */
     color: rgb(0, 255, 247);
+    /* font-size: 12px; */
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.2s;
+}
+nav ul li a:hover::after{
+    width: 100%
+
+}
+
+
+/* Hero Section */
+.hero-section{
+    margin-top: 10%;
+    font-size: 10px;
+}
+
+.hero-section p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8px;
+}
+
+.hero-section h1{
     font-size: 12px;
-    /* text-shadow: 2px 2px #ff0000; */
+    margin-top: 11px;
+
+}
+.hero-section h1 span{
+    color:#ff004f;
 }
