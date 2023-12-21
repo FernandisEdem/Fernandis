@@ -26,7 +26,7 @@
     <!-- Hero Section -->
     <div class="hero-section">
         <p>Front-End Developer</p>
-        <h1>Hi, I'm <span>Fernandis Edem </span> <br><b>Dokpli</b> from Accra, Ghana.</h1>
+        <h1>Hi, I am <span>Fernandis Edem </span> <br>Dokpli from Accra-Ghana</h1>
     </div>
     
     
@@ -35,17 +35,52 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Public/image.png" alt="profile-pic" width="25%">
+                    <img src="Public/image.png" alt="profile-pic">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae sequi dolore praesentium veritatis atque facere possimus nemo iste enim nisi eius id non nulla cupiditate iusto aperiam, asperiores aliquam!</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-End Website Developer</li>
+                            <li><span>Data Analytics</span><br>Experienced Data Analyst</li>
+                            <li><span>Taxation</span><br>Emerging Tax Expert</li>
+                            <li><span>Microsoft Excel</span><br>Advanced Knowledge in Microsoft Excel, including VBA</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018 - Present</span><br>Assistant Statistician <br> Ghana Revenue Authority</li>
+                            <li><span>2017 - 2018</span><br>Research Assistant <br> EQUIP Ghana (Wits Health Consortium)</li>
+                            <li><span>2016 - 2017</span><br>Data Assistant <br> Tema General Hospital</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Certificate in Web Development <br> Wislaw Educational Institute - Accra</li>
+                            <li><span>2019</span><br>Certificate in Data Analytics <br> Kofi Annan International ICT Centre - Accra</li>
+                            <li><span>2012 - 2016</span><br>BA (Hons) Economics & Statistics <br> University of Ghana - Legon</li>
+                        </ul>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </div>
 
 
+
+
 <script src="index.js"></script>
+
 </body>
 </html>
